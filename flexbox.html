@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FlexBox</title>
+    <style>
+        /* BASE STYLES */
+        :root {
+            --clr-dark: rgb(12, 12, 12);
+            --clr-light: rgb(235, 233, 244);
+            --clr-accent: rgb(189, 89, 132);
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            word-spacing: 1.4px;
+            color: var(--clr-dark);
+            background-color: var(--clr-light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            height: 700px;
+            margin: 0 auto;
+            border: 10px solid var(--clr-dark);
+        }
+        /* END OF BASE STYLES */
+
+        .item {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(194, 119, 152);
+            padding: 1em;
+            font-weight: 700;
+            color: var(--clr-light);
+            text-align: center;
+            border: 10px solid var(--clr-accent);
+            border-radius: 10px;
+        }
+        /* END OF BASE STYLES */
+        .container {
+            display: flex;
+
+            /* x-axis */
+            justify-content: space-evenly;
+            /* FLEX END
+               -Column: bottom left
+               -Row: top right 
+
+               SPACE-BETWEEN
+               -evenly spaced between the items
+               - |+ + +|
+
+               SPACE-AROUND
+               -edges also have some space
+               - | +  +  + |
+
+               SPACE-EVENLY
+               -all space even
+               - | + + + |
+            */
+
+            /* y-axis */
+            align-items: center;
+            /*
+                FLEX-START
+                -at the top 
+            */
+
+            flex-wrap: wrap; 
+            /* default is nowraop where all would squish into one row */
+        
+            /* spacing for y-axis */
+            align-content:space-evenly
+
+            /* gap: 1em; even gap between the div */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">Item 1</div>
+        <div class="item item-2">Item 2</div>
+        <div class="item item-3">Item 3</div>
+        <div class="item item-4">Item 4</div>
+        <div class="item item-5">Item 5</div>
+        <div class="item item-6">Item 6</div>
+        <div class="item item-7">Item 7</div>
+        <div class="item item-8">Item 8</div>
+        <div class="item item-9">Item 9</div>
+    </div>
+</body>
+</html>

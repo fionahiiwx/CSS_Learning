@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FlexBox</title>
+    <style>
+        /* BASE STYLES */
+        :root {
+            --clr-dark: rgb(12, 12, 12);
+            --clr-light: rgb(235, 233, 244);
+            --clr-accent: rgb(189, 89, 132);
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            word-spacing: 1.4px;
+            color: var(--clr-dark);
+            background-color: var(--clr-light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            height: 700px;
+            margin: 0 auto;
+            border: 10px solid var(--clr-dark);
+        }
+        /* END OF BASE STYLES */
+
+        .item {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(194, 119, 152);
+            padding: 1em;
+            font-weight: 700;
+            color: var(--clr-light);
+            text-align: center;
+            border: 10px solid var(--clr-accent);
+            border-radius: 10px;
+        }
+        /* END OF BASE STYLES */
+        .container {
+            display: flex;
+        }
+
+        .item-3 {
+            /* flex-grow: 1; let's item 3 fill up the remaining row space*/
+            /* flex-shrink: 5; let's item 3 shrink first */
+            /* flex-basis: 300px; overwrites the width */
+            flex: 1; /* shorthand for those 3 things above */
+            /* flex: grow shrink basis; other's become 0 by default */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">Item 1</div>
+        <div class="item item-2">Item 2</div>
+        <div class="item item-3">Item 3</div>
+    </div>
+</body>
+</html>
