@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hex color generator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            font-size: 20px;
+        }    
+        .maincolor {
+  height: 200px;
+  width: 400px;
+  background: rgba(65, 42, 19);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  margin: 15px 15px 15px 15px;
+}
+
+.color {
+  background-color: none;
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 60px;
+  cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="maincolor">
+        Color 1:
+        <input type="color" id="color_picker" name="color1" value="#f3f3f1">
+      </div>
+      <div class="maincolor">
+        Color 2:
+        <input type="color" id="color" name="color2" value="#1b1b17">
+      </div>
+
+      <script>
+        function myColor() {
+            // Get the value return by color picker
+            var color = document.getElementById('color_picker').value;
+            // Set the color as background
+            document.querySelector('.maincolor').style.backgroundColor = color;
+        }
+        // When user clicks over color picker,
+        // myColor() function is called
+        document.getElementById('color_picker')
+            .addEventListener('input', myColor);
+      </script>
+</body>
+</html>
+
+<!--    <h1>Hex Color Generator</h1>
+    <div class="main">
+        Color Picker: <input type="color"
+            id="colorPicker" value="#6a5acd">
+ 
+        Hex Code: <input type="text" id="box">
+    </div>
+    <script>
+        function myColor() {
+            // Get the value return by color picker
+            var color = document.getElementById('colorPicker').value;
+            // Set the color as background
+            document.body.style.backgroundColor = color;
+ 
+            // Take the hex code
+            document.getElementById('box').value = color;
+        }
+        // When user clicks over color picker,
+        // myColor() function is called
+        document.getElementById('colorPicker')
+            .addEventListener('input', myColor);
+    </script> 
+-->
