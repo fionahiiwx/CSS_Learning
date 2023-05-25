@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: powderblue;
 }
@@ -35,3 +36,42 @@ a:active {
     background-color: transparent;
     text-decoration: underline;
 }
+=======
+body {
+    background-color: powderblue;
+}
+h1 {
+    color: rgb(41, 73, 115);
+    font-family: Verdana;
+    font-size: 300%;
+}
+p {
+    color: rgb(201, 41, 105);
+    font-family: Courier;
+    font-size: 160%;
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+>>>>>>> b97940935d5bca5a6b76c41eb8732d6e4875aa1c

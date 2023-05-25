@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -62,3 +63,69 @@
     -->
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {background-color: lightblue;
+        }
+        h1 {
+            color: white;
+            text-align:center;
+        }
+        p {
+            font-family: verdana;
+            font-size: 20px;
+        }
+        /* WITH ID */
+        #para1 {
+            color: pink; 
+        }
+        /* CLASS */
+        .centre {
+            text-align: centre;
+            color: red;
+        }
+        /* SPECIFIC SELECTOR */
+        h3, h4 {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+    ALL CSS SIMPLE SELECTORS
+    Selector            Example     Exp descp
+    #id     	        #firstname	Selects the element with id="firstname"
+    .class	            .intro	    Selects all elements with class="intro"
+    element.class	    p.intro	    Selects only <p> elements with class="intro"
+    *	                *	        Selects all elements
+    element	            p	        Selects all <p> elements
+    element,element,..	div, p	    Selects all <div> elements and all <p> elements
+    -->
+
+    <h1>My First CSS Example</h1>
+    <p>This a paragraph</p>
+
+    <!--WITH ID-->
+    <p id="para1">This para1</p>
+
+    <!--CLASS-->
+    <h1 class="centre">Red and centre aligned heading</h1>
+    <p class="centre">Red and centre aligned para</p>
+
+    <!--SPECIFIC SELECTOR-->
+    <h2>h2 not selected</h2>
+    <h3>h3 selector</h3>
+    <h4>h4 selected</h4>
+    <h5>h5 not selected</h5>
+
+    <!--
+    LINKING STYLE
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    -->
+</body>
+</html>
+>>>>>>> b97940935d5bca5a6b76c41eb8732d6e4875aa1c
